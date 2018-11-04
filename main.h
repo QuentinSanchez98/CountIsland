@@ -12,8 +12,13 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 #include <fcntl.h>
 
 char *read_file(char *file);
+char **str_to_map(char *str);
+
+void count_island(char **map);
+void count_neighbors(char **map, char digit, int i, int j);
 
 #endif //COUNTISLAND_MAIN_H
